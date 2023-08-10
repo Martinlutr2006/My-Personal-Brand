@@ -5,3 +5,8 @@
     /* background-image: url(/assets/images/IMG-20220416-WA0007.jpg); */
     background-color: lightgrey;
 }
+.home > .nav-bar > header > ul > li > a{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
