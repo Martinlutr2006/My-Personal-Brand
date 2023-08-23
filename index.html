@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
 </head>
 <body>
     <section class="home">
         <br><br><br>
-        <div class="nav-bar1">
+        <!-- <div class="nav-bar1">
             <a href="#" class="nav">HOME</a>
             <a href="#" class="nav">PORTIFOLIO</a>
             <a href="#" class="nav">REZUME</a>
             <a href="#" class="nav">ABOUT</a>
             <a href="#" class="nav">CONTACT</a>
-        </div>
+        </div> -->
         <div class="description">
             <p class="p1">Hello, I'm</p>
             <p class="p2">INEMA BRYAN BENJAMIN</p>
@@ -26,19 +27,47 @@
         <div class="nav-bar2">
             <div class="nav-items">
                 <a href="#" class="nav2">HOME</a>
-                <a href="#" class="nav2">PORTIFOLIO</a>
-                <a href="#" class="nav2">REZUME</a>
-                <a href="#" class="nav2">ABOUT</a>
-                <a href="#" class="nav2">CONTACT</a>
+                <a href="#" class="nav2">ABOUT ME</a>
+                <a href="#" class="nav2">SKILLS</a>
+                <a href="#" class="nav2">CONTACT ME</a>
             </div>
         </div>
-        <div class="F-portifolio"></div>
-        <div class="my-rezume"></div>
-        <div class="about-me"></div>
-        <div class="clients"></div>
-        <div class="services"></div>
-        <div class="blog"></div>
-        <div class="contact"></div>
+        <div class="F-portifolio">
+            <h1 class="h-one"><span class="s-one">Featured</span>  Portifolio</h1>
+        </div>
+        <div class="about-me">
+            <h1 class="h-three"><span class="s-one">About </span> Me</h1>
+            <div class="about-content">
+                <img src="/assets/images/IMG-20220416-WA0006.jpg" class="me">
+                <p class="about-p">I'm a junior Software Developer,<br>Ever since I wrote my first "Hello, World!" program, I've been captivated by the endless possibilities that software development offers. With 8 months of hands-on experience, I've embarked on a journey that has led me to create applications that not only meet technical requirements but also resonate with users on a deeper level.</p>
+            </div>
+        </div>
+        <h1 class="h-four">My <span class="s-one">Skills</span></h1>
+        <div class="skills">
+            <div class="my-skills">
+                <img src="/assets/images/html.jpg" class="img-sklls">
+            </div>
+            <div class="my-skills">
+                <img src="/assets/images/css.jpg" class="img-sklls">
+            </div>
+            <div class="my-skills">
+                <img src="/assets/images/js.jpg" class="img-sklls">
+            </div>
+            <div class="my-skills">
+                <img src="/assets/images/figma.jpg" class="img-sklls">
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="form-items">
+                <h1 class="h-two">Contact Me</h1>
+                <form>
+                    <input type="text" placeholder="Name" class="items" required><br>
+                    <input type="text" placeholder="Email" class="items" required><br>
+                    <textarea placeholder="Message" cols="40" rows="10" class="items 1" required></textarea><br>
+                    <input type="submit" value="Send" class="items-send">
+                </form>
+            </div>    
+        </div>
     </section>
 </body>
 </html>

@@ -1,14 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Calistoga;
+}
 .home{
     width: 100%;
-    height: 695px;
+    height: 750px;
     background-repeat: no-repeat;
-    /* background-image: url(/assets/images/IMG-20220416-WA0007.jpg); */
+    background-image: url(/assets/images/IMG-20220416-WA0007.jpg);
+    background-size: cover;
     background-color: lightgrey;
 }
 .content{
     background-color: black;
     width: 100%;
-    height: 9926px;
+    height: 1530px;
 }
 .nav{
     height: 40px;
@@ -40,14 +46,20 @@
     text-align: center;
 }
 .nav-bar2{
-    text-align: center;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 40px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0;
     background-color: #FFF;
 }
 .description{
     margin-top: 200px;
+    align-items: center;
 }
 .p1{
     color: #8a8a8a;
@@ -75,4 +87,84 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.form-container{
+    height: 200px;
+    display: flex;
+    margin-left: 200px;
+}
+.items{
+    padding: 10px;
+    margin: 10px;
+    width: 430px;
+    background-color: #666666;
+}
+.h-two{
+    margin: 10px;
+    height: 50px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h-three{
+    color: white;
+    margin: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.h-four{
+    color: white;
+    margin-top: 50px;
+    margin: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.h-one{
+    text-align: center;
+}
+.s-one{
+    font-weight: 200;
+}
+.items-send{
+    margin: 10px;
+    width: 100px;
+    background-color: #666666;
+}
+.form-items{
+    /* background-color: rgb(58, 58, 58); */
+    height: 430px;
+    border-radius: 5px;
+}
+.me{
+    width:  400px;
+    height: 450px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.about-content{
+    display: flex;
+    margin-left: 300px;
+}
+.about-p{
+    color: #FFF;
+    font-size: 25px;
+    margin: 20px;
+    line-height: 50px;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.my-skills{
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.img-sklls{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
