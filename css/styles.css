@@ -2,7 +2,7 @@
     width: 100%;
     height: 695px;
     background-repeat: no-repeat;
-    background-image: url(assets\images\IMG-20220416-WA0007.jpg); 
+    background-image: url(/assets/images/IMG-20220416-WA0007.jpg); 
     background-color: lightgrey;
 }
 .content{
