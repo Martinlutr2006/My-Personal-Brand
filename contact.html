@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+            background-color: #f4f4f4; /* Background color from original styles */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff; /* White background */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000; /* Color for heading */
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #000; /* Label color */
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #007bff; /* Button color from original styles */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Hover color for button */
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            display: block;
+            margin-top: 5px;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+        }
+
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #333; /* Social media link color */
+            font-size: 24px;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+        }
+
+        .social-media a:hover {
+            color: #007bff; /* Hover color for social media links */
+        }
+
+        .social-media i {
+            margin-right: 5px;
+        }
+
+        /* Home and Content Styles (from your provided CSS) */
+        .home {
+            width: 100%;
+            height: 695px;
+            background-repeat: no-repeat;
+            background-color: lightgrey;
+        }
+
+        .content {
+            background-color: black;
+            width: 100%;
+            height: 9926px;
+        }
+
+        .nav {
+            height: 40px;
+            width: 100px;
+            text-decoration: none;
+            margin: 10px;
+            padding: 5px;
+            color: #FFF;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .nav2 {
+            height: 40px;
+            width: 100px;
+            text-decoration: none;
+            margin: 10px;
+            padding: 5px;
+            color: #000000;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; 
+        }
+
+        .nav-bar1 {
+            text-align: center;
+        }
+
+        .nav-bar2 {
+            text-align: center;
+            height: 40px;
+            width: 100%;
+            margin-top: 20px;
+            background-color: #FFF;
+        }
+
+        .description {
+            margin-top: 200px;
+        }
+
+        .p1 {
+            color: #8a8a8a;
+            text-align: center;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: normal;
+        }
+
+        .p2 {
+            color: #FFF;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+            font-size: 60px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+
+        .p3 {
+            color: #8a8a8a;
+            font-family: 'Inter', Arial, sans-serif; /* Updated font family */
+            font-size: 20px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/yourprofile" target="_blank" title="Facebook"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://www.twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Font Awesome for social media icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
